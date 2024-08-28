@@ -131,7 +131,12 @@ void print_ops()
     for( auto it : ans )
     {   
         cout<<it.s<<" : ";
-        printf("(%d,%d) -> (%d,%d) \n",it.row,it.col,it.row+1,it.col+1);
+
+        if( it.s == "S" ) printf("(%d,%d) -> (%d,%d) \n",it.row,it.col,it.row+1,it.col+1);
+        else if( it.s == "I" ) printf("(%d,%d) -> (%d,%d) \n",it.row,it.col,it.row,it.col+1);
+        else if( it.s == "D" ) printf("(%d,%d) -> (%d,%d) \n",it.row,it.col,it.row+1,it.col);
+        else if( it.s == "T" ) printf("(%d,%d) -> (%d,%d) \n",it.row,it.col,it.row+2,it.col+2);
+        
 
     }cout<<endl;
 
