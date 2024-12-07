@@ -6,7 +6,7 @@
 using namespace std;
 
 class matrix{
-    int substitute,;
+    int substitute;
     int insert;
     int deletion;
     int transposition;
@@ -68,7 +68,7 @@ int damerauLevenshteinDistance(const string &a, const string &b) {
 }
 
 int main() {
-    string a = "caet";
+    string a = "saturday";
     string b = "cate";
     int distance = damerauLevenshteinDistance(a, b);
     cout << "Damerau-Levenshtein distance between \"" << a << "\" and \"" << b << "\" is: " << distance << endl;

@@ -1,0 +1,2 @@
+- [ ] Lec9,10
+- [ ] Dic_as_a_string_Lec11

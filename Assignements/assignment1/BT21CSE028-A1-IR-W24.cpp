@@ -33,6 +33,8 @@ vector<tuple<int, int, int>> PositionalIntersect(const vector<PostingListEntry>&
             while (ii < pp1.size()) {
                 while (jj < pp2.size()) {
                     if (abs(pp1[ii] - pp2[jj]) <= k) {
+
+                        // printf("%d , %d = %d,%d\n",ii,jj,pp1[ii],pp2[jj]);
                         l.push_back(pp2[jj]);
                     } else if (pp2[jj] > pp1[ii]) {
                         break;
